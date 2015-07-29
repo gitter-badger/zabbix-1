@@ -1,5 +1,5 @@
 server:
-  image: zabbix_server
+  build: docker-build/.
   volumes:
     - /var/lib/docker/vfs/dir/zab1_agentd.d:/etc/zabbix/zabbix_agentd.d
     - /var/lib/docker/vfs/dir/zab1_alscripts:/usr/lib/zabbix/alertscripts
